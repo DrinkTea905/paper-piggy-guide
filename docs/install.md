@@ -1,81 +1,99 @@
 ---
 layout: default
-title: 安装与首次启动
-kicker: 第 2 章
-description: 安装 Windows 版 PaperPiggy，完成模型准备，并选好适合自己的隐私与 AI 模式。
+title: 安装与配置 API
+kicker: 第 2 章 · 基础设置
+description: 安装 PaperPiggy，并把硅基流动配置成默认检索引擎。
 last_reviewed: 2026-07-22
 ---
 
-## 1. 下载正确的安装器
+## 下载与安装
 
-从 [GitHub Releases 最新版本](https://github.com/DrinkTea905/paper-piggy/releases/latest) 下载 Windows 安装器。项目目前正式分发的是 Windows 安装器；macOS 用户请参考主仓库中的源码运行说明。
+从 [PaperPiggy Releases](https://github.com/DrinkTea905/paper-piggy/releases/latest) 下载最新的 Windows 安装器。当前正式分发的是 Windows 版本；macOS 暂时只能从源码运行。
 
-<div class="callout warn">
-  只从 PaperPiggy 官方 GitHub 仓库下载。不要从来历不明的网盘、软件站或聊天附件安装。
-</div>
-
-## 2. 选择安装位置
-
-PaperPiggy 的程序、模型、索引和个人知识数据会放在同一个 PaperPiggy 文件夹体系内。建议选择：
+安装时建议选择：
 
 - 空间充足的磁盘；
-- 你有正常读写权限的位置；
-- 不会被系统清理工具自动删除的位置。
+- 自己有正常读写权限的位置；
+- 不会被系统清理软件自动清理的位置。
 
-不建议放进 Windows 的 Program Files；如果准备建立大型知识库，也不建议放在会频繁同步的网盘目录。
+PaperPiggy 的应用、索引、模型和 Agent 工作区会集中在同一套数据目录中，日后迁移和备份更清楚。
 
-<div class="shot">安装器中的目录选择与空间提示</div>
+## 为什么主教程使用 API 模式
 
-## 3. 第一次启动与模型
+PaperPiggy 的检索不只是把问题发给一个聊天模型。它还需要：
 
-首次启动会检查本地模型。如果模型缺失，应用会引导下载。模型用于本地语义检索和重排，下载量约 1 GB，具体以界面为准。
+- **嵌入模型**：把问题和文献转换成可比较的语义向量；
+- **重排模型**：把候选结果重新排序，提高相关性；
+- **大语言模型**：用于部分摘要、题录抽取或应用内对话。
 
-- 下载慢时先耐心等待；
-- 不要同时启动多个 PaperPiggy；
-- 下载失败可重试，已有数据不会因此被清空；
-- 国内网络访问 GitHub 可能较慢。
+硅基流动同时提供 PaperPiggy 已配置好的嵌入和重排模型，而且这两个模型可以免费调用。因此，本教程统一采用“硅基流动 + API 模式”。
 
-<div class="shot">模型检查、下载进度与完成状态</div>
+DeepSeek、Kimi 等大语言模型 API 可以用于聊天或其他生成任务，但它们通常不提供 PaperPiggy 所需的嵌入与重排接口，不能直接替换知识库检索引擎。
 
-## 4. 选择知识库来源
+## 申请硅基流动 Key
 
-首次向导会让你选择来源：
+<div class="steps">
 
-| 来源 | 适合谁 | 特点 |
-|---|---|---|
-| Zotero | 已用 Zotero 管理论文 | 能读取题录、附件和文库结构 |
-| 普通文件夹 | 文献直接放在文件夹中 | 上手直观，适合小型或独立资料库 |
+### 注册并完成实名认证
 
-以后仍可在设置中调整。初次使用建议先选一个来源跑通，不要同时搬动大量文献。
+打开 [硅基流动登录页](https://account.siliconflow.cn/zh/login)，注册或登录账户，按照网站提示完成实名认证。
 
-## 5. 理解“本地”和“API”
+### 创建 API Key
 
-PaperPiggy 的资料库和索引保存在本机。不同功能对外部服务的依赖不同：
+进入账户中的“API 密钥”页面，创建一个新的 Key。这个 Key 会填入 PaperPiggy 的首次向导。
 
-- **本地检索**：语义检索和重排可使用本地模型。
-- **在线 AI 功能**：对话、部分摘要或其他生成能力需要你配置的 API。
-- **发送范围**：使用在线功能时，完成任务所需的查询与片段可能发送给对应服务商。
+### 建议充值 1 元
 
-<div class="callout tip">
-  如果文献敏感，先只用本地检索；决定启用在线功能前，了解所在机构的资料与合规要求。
+即使要使用的检索模型是免费的，也建议让账户余额高于零。余额为零时，硅基流动可能拒绝免费模型请求并返回余额不足；充值 1 元后，免费模型仍然不会扣掉这笔余额。
+
 </div>
 
-## 6. 首页的新手指引
+<div class="callout warn">
+  硅基流动的 <code>.cn</code> 与 <code>.com</code> 账户彼此独立。注册、充值和创建 Key 时要使用同一套站点与账户。
+</div>
 
-首次配置完成后会进入首页。首页的小猪头像是内置新手指引入口；它只在首页仪表盘出现。想复习时，回到首页点击头像即可。
+## 完成首次向导
 
-<div class="shot">首页小猪头像与新手指引入口</div>
+打开 PaperPiggy 后，按以下顺序操作：
 
-## 7. 安装完成检查
+1. 在“配 Key · 引擎”中填写 SiliconFlow API Key；
+2. 点击“测试连接”，确认嵌入和重排模型都可用；
+3. 选择“API 模式”；
+4. Base URL 保持应用默认值；
+5. 嵌入模型保持 <code>BAAI/bge-m3</code>；
+6. 重排模型保持 <code>BAAI/bge-reranker-v2-m3</code>；
+7. 再次确认连接成功，然后进入“连接文库”。
+
+通常只需要填写 Key，其他字段保持默认。
+
+## 这把 Key 会用在哪里
+
+同一把硅基流动 Key 可以供 PaperPiggy 的多项功能复用：
+
+- API 检索引擎；
+- 文件夹模式的题录抽取；
+- 应用内对话；
+- 服务端生成检索摘要；
+- 其他使用免费模型的小功能。
+
+Agent 本身使用什么模型，由 Claude Code、Codex 或其他 Agent 客户端决定，和这把检索 Key 不是同一层设置。
+
+## API 模式意味着什么
+
+API 模式在检索和建库时会把必要的文本发送给硅基流动完成嵌入或重排。原始 Zotero 文库仍在本机，PaperPiggy 不会修改它。
+
+如果你的使用场景要求检索过程完全离线，可以改用本地模式；本地模式的模型下载、内存占用和切换注意事项见[进阶设置]({{ '/advanced/' | relative_url }})。
+
+## 配置完成检查
 
 <ul class="checklist">
-  <li>应用能正常打开，不会出现一闪而过的黑色终端窗口。</li>
-  <li>模型状态显示可用。</li>
-  <li>已选定 Zotero 或普通文件夹来源。</li>
-  <li>知道 API Key 只应填写在应用设置中，不应出现在截图或公开问题里。</li>
+  <li>SiliconFlow Key 测试成功。</li>
+  <li>检索引擎选择了 API 模式。</li>
+  <li>嵌入与重排模型保持应用默认值。</li>
+  <li>已经进入“连接文库”步骤。</li>
 </ul>
 
 <div class="page-next">
   <a href="{{ '/quick-start/' | relative_url }}">← 10 分钟快速开始</a>
-  <a href="{{ '/library/' | relative_url }}">下一章：建立知识库 →</a>
+  <a href="{{ '/library/' | relative_url }}">下一章：连接 Zotero 建库 →</a>
 </div>

@@ -1,74 +1,60 @@
 ---
 layout: default
 title: 教程首页
-description: 面向第一次使用 PaperPiggy 的完整中文教程，从安装、建库到检索、综述库和 AI 助手。
+description: 从安装和 Zotero 建库开始，尽快连接 Agent，让它替你检索、深读、写作并维护知识库。
 last_reviewed: 2026-07-22
 ---
 
 <section class="hero">
-  <span class="hero-badge">本地知识库 · 法学与社科研究</span>
-  <h1>把散落的论文，变成可检索、可追溯的研究知识库。</h1>
-  <p>这是一套从零开始的 PaperPiggy 教程。你不需要懂向量数据库或命令行：先用 10 分钟跑通一次，再按需要学习深索、综述库与 AI 助手。</p>
+  <img class="hero-logo" src="{{ '/assets/paperpiggy.png' | relative_url }}" alt="PaperPiggy 应用图标">
+  <span class="hero-badge">PaperPiggy 新手教程</span>
+  <h1>建好库，接上 Agent，然后直接说你要研究什么。</h1>
+  <p>PaperPiggy 不只是一个搜索框。它把 Zotero 文库变成 AI 可以检索、精读和长期维护的研究知识库。你只需完成一次基础设置，之后大部分检索、深索、综述和维护工作都可以交给 Agent。</p>
   <div class="hero-actions">
-    <a class="button" href="{{ '/quick-start/' | relative_url }}">开始 10 分钟体验</a>
-    <a class="button ghost" href="{{ '/install/' | relative_url }}">从安装开始</a>
+    <a class="button" href="{{ '/quick-start/' | relative_url }}">10 分钟完成基础设置</a>
+    <a class="button ghost" href="{{ '/agent/' | relative_url }}">先认识 Agent</a>
   </div>
 </section>
 
-<div class="callout tip">
-  <strong>已按当前界面核对。</strong> 教程覆盖 PDF、EPUB、DOCX、Markdown、TXT 五种全文格式，以及新版的文献页、综述库、备份和应用内更新。
+<div class="definition">
+  <b>什么是 Agent？</b> 它是能够自己调用工具、连续完成多步任务的 AI 助手。普通聊天只能回答你眼前的问题；Agent 可以先检查知识库，再检索文献、读取原文、核对引文、整理成果，并把有价值的内容写回综述库。
 </div>
 
-## 选择你的学习路线
+## 推荐学习顺序
 
-<div class="grid">
-  <a class="card" href="{{ '/quick-start/' | relative_url }}">
-    <span class="number">路线 A · 最省时间</span>
-    <strong>先跑通，再细学</strong>
-    <span>适合第一次体验。完成安装、导入、搜索和一次问答。</span>
-  </a>
-  <a class="card" href="{{ '/library/' | relative_url }}">
-    <span class="number">路线 B · 管好文献</span>
-    <strong>先建立可靠知识库</strong>
-    <span>适合已有 Zotero 或大型论文文件夹的研究者。</span>
-  </a>
-  <a class="card" href="{{ '/agent/' | relative_url }}">
-    <span class="number">路线 C · 进阶研究</span>
-    <strong>让 AI 助手接入知识库</strong>
-    <span>适合写综述、做长期课题或自动化研究流程。</span>
-  </a>
+教程不再提供几条彼此分散的路线。第一次使用时，按下面这条主线走即可：
+
+<div class="journey">
+  <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，配置硅基流动 API</strong><span>主教程统一使用 API 模式，免下载本地检索模型，配置最简单。</span></a>
+  <a href="{{ '/library/' | relative_url }}"><strong>连接 Zotero，建立第一版索引</strong><span>先让题录和语义检索可用，不必等待整库深索完成。</span></a>
+  <a href="{{ '/agent/' | relative_url }}"><strong>把知识库连接给 Agent</strong><span>在应用的 Agent 页复制接入命令，粘贴到 Claude Code、Codex 等客户端。</span></a>
+  <a href="{{ '/search/' | relative_url }}"><strong>直接用自然语言布置研究任务</strong><span>让 Agent 自己检索、挑选文献、深读原文并核对证据。</span></a>
+  <a href="{{ '/chat-wiki/' | relative_url }}"><strong>让 Agent 持续维护知识库</strong><span>补深索、写检索摘要、维护综述页、检查过期结论和资料缺口。</span></a>
 </div>
 
-## 从浅到深的八章
+<div class="callout agent">
+  <strong>Agent 不是最后才学的高级功能。</strong> 它是 PaperPiggy 的主要使用方式。完成首次建库后，就可以先接上 Agent；深索和检索摘要不必全部由你手工处理。
+</div>
+
+## 基础部分
 
 <div class="grid two">
-  <a class="card" href="{{ '/quick-start/' | relative_url }}"><span class="number">01</span><strong>10 分钟快速开始</strong><span>用最短路径验证安装和检索。</span></a>
-  <a class="card" href="{{ '/install/' | relative_url }}"><span class="number">02</span><strong>安装与首次启动</strong><span>选择安装位置、下载模型、理解隐私模式。</span></a>
-  <a class="card" href="{{ '/library/' | relative_url }}"><span class="number">03</span><strong>建立知识库</strong><span>连接 Zotero 或普通文件夹，理解四层处理。</span></a>
-  <a class="card" href="{{ '/search/' | relative_url }}"><span class="number">04</span><strong>检索与深索</strong><span>从快速找文献到段落级证据定位。</span></a>
-  <a class="card" href="{{ '/chat-wiki/' | relative_url }}"><span class="number">05</span><strong>问答与综述库</strong><span>带来源问答，把稳定结论沉淀下来。</span></a>
-  <a class="card" href="{{ '/agent/' | relative_url }}"><span class="number">06</span><strong>连接 AI 助手</strong><span>让 Codex、Claude Code 等工具直接使用知识库。</span></a>
-  <a class="card" href="{{ '/backup-faq/' | relative_url }}"><span class="number">07</span><strong>备份、更新与排错</strong><span>保护数据，区分知识库更新与应用更新。</span></a>
-  <a class="card" href="https://github.com/DrinkTea905/paper-piggy" target="_blank" rel="noopener"><span class="number">08</span><strong>项目与下载</strong><span>查看源码、版本记录和最新安装器。</span></a>
+  <a class="card" href="{{ '/quick-start/' | relative_url }}"><span class="number">01</span><strong>10 分钟快速开始</strong><span>安装、配置 API、连接 Zotero、建库并接上 Agent。</span></a>
+  <a class="card" href="{{ '/install/' | relative_url }}"><span class="number">02</span><strong>安装与配置 API</strong><span>申请硅基流动 Key，理解它与 Agent 模型的区别。</span></a>
+  <a class="card" href="{{ '/library/' | relative_url }}"><span class="number">03</span><strong>连接 Zotero 建库</strong><span>理解题录、语义、深索和检索摘要四个阶段。</span></a>
+  <a class="card" href="{{ '/agent/' | relative_url }}"><span class="number">04</span><strong>连接 Agent</strong><span>从应用里复制真实命令，完成第一次知识库调用。</span></a>
+  <a class="card" href="{{ '/search/' | relative_url }}"><span class="number">05</span><strong>用 Agent 开始研究</strong><span>从找文献到读原文、核论断和生成研究成果。</span></a>
+  <a class="card" href="{{ '/chat-wiki/' | relative_url }}"><span class="number">06</span><strong>让 Agent 维护知识库</strong><span>把一次性答案变成可积累、会更新的综述体系。</span></a>
 </div>
 
-## 先记住这张能力地图
+## 进阶部分
 
-<div class="flow">
-  <span>导入题录</span>
-  <span>建立语义索引</span>
-  <span>深索全文证据</span>
-  <span>问答与沉淀</span>
+当基础主线已经跑通，再阅读：
+
+<div class="grid two">
+  <a class="card" href="{{ '/advanced/' | relative_url }}"><span class="number">进阶</span><strong>本地模式、文件夹模式与应用内对话</strong><span>这些都是有特定用途的替代方案，不是首次使用的必经步骤。</span></a>
+  <a class="card" href="{{ '/backup-faq/' | relative_url }}"><span class="number">维护</span><strong>备份、更新与排错</strong><span>保护研究成果，区分知识库更新、索引重建和应用升级。</span></a>
 </div>
-
-- **只想找文献**：先看“检索与深索”。
-- **想对自己的文献提问**：看“问答与综述库”。
-- **想让 AI 帮你写综述或维护课题**：继续到“连接 AI 助手”。
-- **担心数据安全**：先看“备份、更新与排错”。
-
-## 关于截图
-
-目前正文先以文字步骤为主，所有需要配图的位置都标成“后续补图”。以后补图时，会优先加入安装路径、首次建库、深索结果、综述库和 AI 助手连接这几类关键画面。
 
 <div class="page-next">
   <span></span>

@@ -11,7 +11,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回教程首页">
-      <span class="brand-mark" aria-hidden="true">🐷</span>
+      <img class="brand-mark" src="{{ '/assets/paperpiggy.png' | relative_url }}" alt="">
       <span><strong>PaperPiggy</strong><small>从零开始</small></span>
     </a>
     <nav class="top-actions" aria-label="站点链接">
@@ -23,13 +23,17 @@
   <details class="mobile-nav">
     <summary>目录 · {{ page.title }}</summary>
     <nav>
+      <span>基础设置</span>
       <a href="{{ '/' | relative_url }}">教程首页</a>
       <a href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
-      <a href="{{ '/install/' | relative_url }}">安装与首次启动</a>
-      <a href="{{ '/library/' | relative_url }}">建立知识库</a>
-      <a href="{{ '/search/' | relative_url }}">检索与深索</a>
-      <a href="{{ '/chat-wiki/' | relative_url }}">问答与综述库</a>
-      <a href="{{ '/agent/' | relative_url }}">连接 AI 助手</a>
+      <a href="{{ '/install/' | relative_url }}">安装与配置 API</a>
+      <a href="{{ '/library/' | relative_url }}">连接 Zotero 建库</a>
+      <a href="{{ '/agent/' | relative_url }}">连接 Agent</a>
+      <span>日常使用</span>
+      <a href="{{ '/search/' | relative_url }}">用 Agent 开始研究</a>
+      <a href="{{ '/chat-wiki/' | relative_url }}">让 Agent 维护知识库</a>
+      <span>进阶与维护</span>
+      <a href="{{ '/advanced/' | relative_url }}">进阶设置</a>
       <a href="{{ '/backup-faq/' | relative_url }}">备份、更新与排错</a>
     </nav>
   </details>
@@ -37,24 +41,21 @@
   <div class="page-shell">
     <aside class="sidebar">
       <nav aria-label="教程目录">
-        <p class="nav-label">开始</p>
+        <p class="nav-label">基础设置</p>
         <a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">教程首页</a>
         <a class="{% if page.url contains 'quick-start' %}active{% endif %}" href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
-        <a class="{% if page.url contains 'install' %}active{% endif %}" href="{{ '/install/' | relative_url }}">安装与首次启动</a>
+        <a class="{% if page.url contains 'install' %}active{% endif %}" href="{{ '/install/' | relative_url }}">安装与配置 API</a>
+        <a class="{% if page.url contains 'library' %}active{% endif %}" href="{{ '/library/' | relative_url }}">连接 Zotero 建库</a>
+        <a class="{% if page.url contains 'agent' %}active{% endif %}" href="{{ '/agent/' | relative_url }}">连接 Agent</a>
 
-        <p class="nav-label">日常使用</p>
-        <a class="{% if page.url contains 'library' %}active{% endif %}" href="{{ '/library/' | relative_url }}">建立知识库</a>
-        <a class="{% if page.url contains 'search' %}active{% endif %}" href="{{ '/search/' | relative_url }}">检索与深索</a>
-        <a class="{% if page.url contains 'chat-wiki' %}active{% endif %}" href="{{ '/chat-wiki/' | relative_url }}">问答与综述库</a>
+        <p class="nav-label">Agent 日常使用</p>
+        <a class="{% if page.url contains 'search' %}active{% endif %}" href="{{ '/search/' | relative_url }}">用 Agent 开始研究</a>
+        <a class="{% if page.url contains 'chat-wiki' %}active{% endif %}" href="{{ '/chat-wiki/' | relative_url }}">让 Agent 维护知识库</a>
 
-        <p class="nav-label">进阶</p>
-        <a class="{% if page.url contains 'agent' %}active{% endif %}" href="{{ '/agent/' | relative_url }}">连接 AI 助手</a>
+        <p class="nav-label">进阶与维护</p>
+        <a class="{% if page.url contains 'advanced' %}active{% endif %}" href="{{ '/advanced/' | relative_url }}">进阶设置</a>
         <a class="{% if page.url contains 'backup-faq' %}active{% endif %}" href="{{ '/backup-faq/' | relative_url }}">备份、更新与排错</a>
       </nav>
-      <div class="sidebar-note">
-        <strong>隐私提醒</strong>
-        <span>截图和提问前，请遮住 API Key、私人路径与未公开研究信息。</span>
-      </div>
     </aside>
 
     <main class="content">

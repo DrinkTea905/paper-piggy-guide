@@ -24,13 +24,13 @@
     <summary>目录 · {{ page.title }}</summary>
     <nav>
       <a href="{{ '/' | relative_url }}">教程首页</a>
-      <a href="{{ '/quick-start.html' | relative_url }}">10 分钟快速开始</a>
-      <a href="{{ '/install.html' | relative_url }}">安装与首次启动</a>
-      <a href="{{ '/library.html' | relative_url }}">建立知识库</a>
-      <a href="{{ '/search.html' | relative_url }}">检索与深索</a>
-      <a href="{{ '/chat-wiki.html' | relative_url }}">问答与综述库</a>
-      <a href="{{ '/agent.html' | relative_url }}">连接 AI 助手</a>
-      <a href="{{ '/backup-faq.html' | relative_url }}">备份、更新与排错</a>
+      <a href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
+      <a href="{{ '/install/' | relative_url }}">安装与首次启动</a>
+      <a href="{{ '/library/' | relative_url }}">建立知识库</a>
+      <a href="{{ '/search/' | relative_url }}">检索与深索</a>
+      <a href="{{ '/chat-wiki/' | relative_url }}">问答与综述库</a>
+      <a href="{{ '/agent/' | relative_url }}">连接 AI 助手</a>
+      <a href="{{ '/backup-faq/' | relative_url }}">备份、更新与排错</a>
     </nav>
   </details>
 
@@ -39,17 +39,17 @@
       <nav aria-label="教程目录">
         <p class="nav-label">开始</p>
         <a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">教程首页</a>
-        <a class="{% if page.url contains 'quick-start' %}active{% endif %}" href="{{ '/quick-start.html' | relative_url }}">10 分钟快速开始</a>
-        <a class="{% if page.url contains 'install' %}active{% endif %}" href="{{ '/install.html' | relative_url }}">安装与首次启动</a>
+        <a class="{% if page.url contains 'quick-start' %}active{% endif %}" href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
+        <a class="{% if page.url contains 'install' %}active{% endif %}" href="{{ '/install/' | relative_url }}">安装与首次启动</a>
 
         <p class="nav-label">日常使用</p>
-        <a class="{% if page.url contains 'library' %}active{% endif %}" href="{{ '/library.html' | relative_url }}">建立知识库</a>
-        <a class="{% if page.url contains 'search' %}active{% endif %}" href="{{ '/search.html' | relative_url }}">检索与深索</a>
-        <a class="{% if page.url contains 'chat-wiki' %}active{% endif %}" href="{{ '/chat-wiki.html' | relative_url }}">问答与综述库</a>
+        <a class="{% if page.url contains 'library' %}active{% endif %}" href="{{ '/library/' | relative_url }}">建立知识库</a>
+        <a class="{% if page.url contains 'search' %}active{% endif %}" href="{{ '/search/' | relative_url }}">检索与深索</a>
+        <a class="{% if page.url contains 'chat-wiki' %}active{% endif %}" href="{{ '/chat-wiki/' | relative_url }}">问答与综述库</a>
 
         <p class="nav-label">进阶</p>
-        <a class="{% if page.url contains 'agent' %}active{% endif %}" href="{{ '/agent.html' | relative_url }}">连接 AI 助手</a>
-        <a class="{% if page.url contains 'backup-faq' %}active{% endif %}" href="{{ '/backup-faq.html' | relative_url }}">备份、更新与排错</a>
+        <a class="{% if page.url contains 'agent' %}active{% endif %}" href="{{ '/agent/' | relative_url }}">连接 AI 助手</a>
+        <a class="{% if page.url contains 'backup-faq' %}active{% endif %}" href="{{ '/backup-faq/' | relative_url }}">备份、更新与排错</a>
       </nav>
       <div class="sidebar-note">
         <strong>隐私提醒</strong>

@@ -80,5 +80,5 @@ last_reviewed: 2026-07-22
 
 <div class="page-next">
   <a href="{{ '/' | relative_url }}">← 教程首页</a>
-  <a href="{{ '/install.html' | relative_url }}">下一章：安装与首次启动 →</a>
+  <a href="{{ '/install/' | relative_url }}">下一章：安装与首次启动 →</a>
 </div>

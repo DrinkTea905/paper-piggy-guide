@@ -76,6 +76,6 @@ PaperPiggy 的资料库和索引保存在本机。不同功能对外部服务的
 </ul>
 
 <div class="page-next">
-  <a href="{{ '/quick-start.html' | relative_url }}">← 10 分钟快速开始</a>
-  <a href="{{ '/library.html' | relative_url }}">下一章：建立知识库 →</a>
+  <a href="{{ '/quick-start/' | relative_url }}">← 10 分钟快速开始</a>
+  <a href="{{ '/library/' | relative_url }}">下一章：建立知识库 →</a>
 </div>

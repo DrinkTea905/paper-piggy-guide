@@ -111,6 +111,6 @@ PaperPiggy 会综合语义、关键词、重排和来源评价等信息，但排
 | 新文件找不到 | 执行“立即更新知识库” |
 
 <div class="page-next">
-  <a href="{{ '/library.html' | relative_url }}">← 建立知识库</a>
-  <a href="{{ '/chat-wiki.html' | relative_url }}">下一章：问答与综述库 →</a>
+  <a href="{{ '/library/' | relative_url }}">← 建立知识库</a>
+  <a href="{{ '/chat-wiki/' | relative_url }}">下一章：问答与综述库 →</a>
 </div>

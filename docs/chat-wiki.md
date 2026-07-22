@@ -87,6 +87,6 @@ last_reviewed: 2026-07-22
 - 含有未公开敏感信息、但你尚未决定存储方式的内容。
 
 <div class="page-next">
-  <a href="{{ '/search.html' | relative_url }}">← 检索与深索</a>
-  <a href="{{ '/agent.html' | relative_url }}">下一章：连接 AI 助手 →</a>
+  <a href="{{ '/search/' | relative_url }}">← 检索与深索</a>
+  <a href="{{ '/agent/' | relative_url }}">下一章：连接 AI 助手 →</a>
 </div>

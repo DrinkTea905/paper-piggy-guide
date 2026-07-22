@@ -90,6 +90,6 @@ HTML 不属于当前支持格式。同一条记录有多个附件时，主全文
 </ul>
 
 <div class="page-next">
-  <a href="{{ '/install.html' | relative_url }}">← 安装与首次启动</a>
-  <a href="{{ '/search.html' | relative_url }}">下一章：检索与深索 →</a>
+  <a href="{{ '/install/' | relative_url }}">← 安装与首次启动</a>
+  <a href="{{ '/search/' | relative_url }}">下一章：检索与深索 →</a>
 </div>

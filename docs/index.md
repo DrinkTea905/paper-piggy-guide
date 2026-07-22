@@ -1,73 +1,76 @@
 ---
 layout: default
 title: 教程首页
-permalink: /
+description: 面向第一次使用 PaperPiggy 的完整中文教程，从安装、建库到检索、综述库和 AI 助手。
+last_reviewed: 2026-07-22
 ---
 
-# 把你的文献库，养成真正能工作的研究助手
+<section class="hero">
+  <span class="hero-badge">本地知识库 · 法学与社科研究</span>
+  <h1>把散落的论文，变成可检索、可追溯的研究知识库。</h1>
+  <p>这是一套从零开始的 PaperPiggy 教程。你不需要懂向量数据库或命令行：先用 10 分钟跑通一次，再按需要学习深索、综述库与 AI 助手。</p>
+  <div class="hero-actions">
+    <a class="button" href="{{ '/quick-start.html' | relative_url }}">开始 10 分钟体验</a>
+    <a class="button ghost" href="{{ '/install.html' | relative_url }}">从安装开始</a>
+  </div>
+</section>
 
-<p class="lead">PaperPiggy（论文小猪）可以把 Zotero 或全文文件夹建成本地知识库：查题录、搜全文、定位原文、基于自己的文献对话，再接入 AI Agent 完成综述、资料汇编和长期维护。</p>
-
-> 这套教程不要求你懂向量数据库、RAG 或 MCP。先在 10 分钟内获得第一次成功，再逐步学习深索、综述库和 Agent。
-
-<div class="cards">
-  <a class="card" href="{{ '/quick-start/' | relative_url }}"><b>🚀 我第一次使用</b><span>从安装到第一次检索，约 10 分钟。</span></a>
-  <a class="card" href="{{ '/search/' | relative_url }}"><b>🔎 我已经建好库</b><span>学习深索、全文检索和原文定位。</span></a>
-  <a class="card" href="{{ '/agent/' | relative_url }}"><b>🤖 我要接 AI 助手</b><span>让 Claude Code、Codex 等系统查库和写作。</span></a>
+<div class="callout tip">
+  <strong>已按当前界面核对。</strong> 教程覆盖 PDF、EPUB、DOCX、Markdown、TXT 五种全文格式，以及新版的文献页、综述库、备份和应用内更新。
 </div>
 
-## 学完以后，你能做到什么
+## 选择你的学习路线
 
-1. 把 Zotero 文库或一个全文文件夹接入 PaperPiggy。
-2. 按题名、作者、年份、DOI 或 ISBN 查找文献。
-3. 用研究问题检索全文，回到 PDF 页码、章节、段落或行号。
-4. 基于库内证据提问，并检查回答使用了哪些来源。
-5. 把重要结论保存成可复用、可核验的综述页。
-6. 接入 AI Agent，完成检索、深读、提纲、写作和引文核验。
-7. 正确备份知识库，并区分“更新知识库”和“更新应用”。
+<div class="grid">
+  <a class="card" href="{{ '/quick-start.html' | relative_url }}">
+    <span class="number">路线 A · 最省时间</span>
+    <strong>先跑通，再细学</strong>
+    <span>适合第一次体验。完成安装、导入、搜索和一次问答。</span>
+  </a>
+  <a class="card" href="{{ '/library.html' | relative_url }}">
+    <span class="number">路线 B · 管好文献</span>
+    <strong>先建立可靠知识库</strong>
+    <span>适合已有 Zotero 或大型论文文件夹的研究者。</span>
+  </a>
+  <a class="card" href="{{ '/agent.html' | relative_url }}">
+    <span class="number">路线 C · 进阶研究</span>
+    <strong>让 AI 助手接入知识库</strong>
+    <span>适合写综述、做长期课题或自动化研究流程。</span>
+  </a>
+</div>
 
-## 先理解四层能力
+## 从浅到深的八章
 
-### 第一层：文献入库
+<div class="grid two">
+  <a class="card" href="{{ '/quick-start.html' | relative_url }}"><span class="number">01</span><strong>10 分钟快速开始</strong><span>用最短路径验证安装和检索。</span></a>
+  <a class="card" href="{{ '/install.html' | relative_url }}"><span class="number">02</span><strong>安装与首次启动</strong><span>选择安装位置、下载模型、理解隐私模式。</span></a>
+  <a class="card" href="{{ '/library.html' | relative_url }}"><span class="number">03</span><strong>建立知识库</strong><span>连接 Zotero 或普通文件夹，理解四层处理。</span></a>
+  <a class="card" href="{{ '/search.html' | relative_url }}"><span class="number">04</span><strong>检索与深索</strong><span>从快速找文献到段落级证据定位。</span></a>
+  <a class="card" href="{{ '/chat-wiki.html' | relative_url }}"><span class="number">05</span><strong>问答与综述库</strong><span>带来源问答，把稳定结论沉淀下来。</span></a>
+  <a class="card" href="{{ '/agent.html' | relative_url }}"><span class="number">06</span><strong>连接 AI 助手</strong><span>让 Codex、Claude Code 等工具直接使用知识库。</span></a>
+  <a class="card" href="{{ '/backup-faq.html' | relative_url }}"><span class="number">07</span><strong>备份、更新与排错</strong><span>保护数据，区分知识库更新与应用更新。</span></a>
+  <a class="card" href="https://github.com/DrinkTea905/paper-piggy" target="_blank" rel="noopener"><span class="number">08</span><strong>项目与下载</strong><span>查看源码、版本记录和最新安装器。</span></a>
+</div>
 
-PaperPiggy 先读取题名、作者、年份、期刊、摘要等题录信息。完成后，你可以把它当成本地文献目录使用。
+## 先记住这张能力地图
 
-### 第二层：全文检索
+<div class="flow">
+  <span>导入题录</span>
+  <span>建立语义索引</span>
+  <span>深索全文证据</span>
+  <span>问答与沉淀</span>
+</div>
 
-完成“深索”后，PaperPiggy 会把全文拆成可检索的小段。PDF 返回页码，EPUB 返回章节，DOCX 和 Markdown 返回标题段落，TXT 返回行号。
+- **只想找文献**：先看“检索与深索”。
+- **想对自己的文献提问**：看“问答与综述库”。
+- **想让 AI 帮你写综述或维护课题**：继续到“连接 AI 助手”。
+- **担心数据安全**：先看“备份、更新与排错”。
 
-### 第三层：基于文献对话
+## 关于截图
 
-配置大模型 API Key 后，可以在“💬 对话”页面提问。PaperPiggy 先检索你的库，再根据检索结果回答并给出来源。
+目前正文先以文字步骤为主，所有需要配图的位置都标成“后续补图”。以后补图时，会优先加入安装路径、首次建库、深索结果、综述库和 AI 助手连接这几类关键画面。
 
-### 第四层：接入 AI Agent
-
-接入支持 MCP 的 AI 助手后，它可以主动检索、深读、核验引文、写综述、维护项目记忆和综述库。
-
-| 内置对话 | AI Agent |
-|---|---|
-| 适合随手问一个问题 | 适合系统研究一个主题 |
-| 一次读取少量来源 | 可以多轮检索、深读与核验 |
-| 答案默认不跨会话积累 | 可以维护交付物、综述和项目记忆 |
-| 配好模型即可使用 | 需要先完成一次 MCP 接入 |
-
-## 推荐学习顺序
-
-1. [10 分钟快速开始]({{ '/quick-start/' | relative_url }})
-2. [安装与首次设置]({{ '/install/' | relative_url }})
-3. [连接文献与建立索引]({{ '/library/' | relative_url }})
-4. [深索与全文检索]({{ '/search/' | relative_url }})
-5. [内置对话与综述库]({{ '/chat-wiki/' | relative_url }})
-6. [接入 AI Agent]({{ '/agent/' | relative_url }})
-7. [备份、更新与常见问题]({{ '/backup-faq/' | relative_url }})
-
-## 隐私说明
-
-原始文献、索引、综述和 Agent 工作区保存在本机，但不同模式的联网边界不同：
-
-- **本地检索模式**：嵌入和重排可以离线在本机完成。
-- **API 检索模式**：建库和检索所需的必要文本会发送给你选择的服务商。
-- **内置对话**：问题和检索到的上下文会发送给你配置的大模型服务商。
-- **Agent**：还要遵守你使用的 AI 助手自身的数据政策。
-
-选择模式前，请根据文献敏感程度判断是否适合使用外部服务。
+<div class="page-next">
+  <span></span>
+  <a href="{{ '/quick-start.html' | relative_url }}">下一章：10 分钟快速开始 →</a>
+</div>

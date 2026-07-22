@@ -2,39 +2,72 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{ page.description | default: site.description }}">
-  <title>{{ page.title | default: site.title }} · PaperPiggy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f1e8">
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <title>{{ page.title }} · PaperPiggy 新手教程</title>
   <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-  <header class="top">
-    <a class="brand" href="{{ '/' | relative_url }}">🐷 PaperPiggy 新手教程</a>
-    <div class="toplinks">
-      <a href="https://github.com/DrinkTea905/paper-piggy/releases/latest">下载最新版</a>
-      <a href="https://github.com/DrinkTea905/paper-piggy">程序仓库</a>
-    </div>
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回教程首页">
+      <span class="brand-mark" aria-hidden="true">🐷</span>
+      <span><strong>PaperPiggy</strong><small>从零开始</small></span>
+    </a>
+    <nav class="top-actions" aria-label="站点链接">
+      <a href="https://github.com/DrinkTea905/paper-piggy" target="_blank" rel="noopener">项目主页</a>
+      <a class="button small" href="https://github.com/DrinkTea905/paper-piggy/releases/latest" target="_blank" rel="noopener">下载最新版</a>
+    </nav>
   </header>
-  <div class="shell">
-    <aside class="side">
-      <nav>
-        <a href="{{ '/' | relative_url }}">教程首页</a>
-        <a href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
-        <a href="{{ '/install/' | relative_url }}">安装与首次设置</a>
-        <a href="{{ '/library/' | relative_url }}">连接文献与建立索引</a>
-        <a href="{{ '/search/' | relative_url }}">深索与全文检索</a>
-        <a href="{{ '/chat-wiki/' | relative_url }}">对话与综述库</a>
-        <a href="{{ '/agent/' | relative_url }}">接入 AI Agent</a>
-        <a href="{{ '/backup-faq/' | relative_url }}">备份、更新与常见问题</a>
+
+  <details class="mobile-nav">
+    <summary>目录 · {{ page.title }}</summary>
+    <nav>
+      <a href="{{ '/' | relative_url }}">教程首页</a>
+      <a href="{{ '/quick-start.html' | relative_url }}">10 分钟快速开始</a>
+      <a href="{{ '/install.html' | relative_url }}">安装与首次启动</a>
+      <a href="{{ '/library.html' | relative_url }}">建立知识库</a>
+      <a href="{{ '/search.html' | relative_url }}">检索与深索</a>
+      <a href="{{ '/chat-wiki.html' | relative_url }}">问答与综述库</a>
+      <a href="{{ '/agent.html' | relative_url }}">连接 AI 助手</a>
+      <a href="{{ '/backup-faq.html' | relative_url }}">备份、更新与排错</a>
+    </nav>
+  </details>
+
+  <div class="page-shell">
+    <aside class="sidebar">
+      <nav aria-label="教程目录">
+        <p class="nav-label">开始</p>
+        <a class="{% if page.url == '/' %}active{% endif %}" href="{{ '/' | relative_url }}">教程首页</a>
+        <a class="{% if page.url contains 'quick-start' %}active{% endif %}" href="{{ '/quick-start.html' | relative_url }}">10 分钟快速开始</a>
+        <a class="{% if page.url contains 'install' %}active{% endif %}" href="{{ '/install.html' | relative_url }}">安装与首次启动</a>
+
+        <p class="nav-label">日常使用</p>
+        <a class="{% if page.url contains 'library' %}active{% endif %}" href="{{ '/library.html' | relative_url }}">建立知识库</a>
+        <a class="{% if page.url contains 'search' %}active{% endif %}" href="{{ '/search.html' | relative_url }}">检索与深索</a>
+        <a class="{% if page.url contains 'chat-wiki' %}active{% endif %}" href="{{ '/chat-wiki.html' | relative_url }}">问答与综述库</a>
+
+        <p class="nav-label">进阶</p>
+        <a class="{% if page.url contains 'agent' %}active{% endif %}" href="{{ '/agent.html' | relative_url }}">连接 AI 助手</a>
+        <a class="{% if page.url contains 'backup-faq' %}active{% endif %}" href="{{ '/backup-faq.html' | relative_url }}">备份、更新与排错</a>
       </nav>
-      <p class="side-note">教程按当前正式版界面核对。若按钮名称有变化，以应用内实际显示为准。</p>
+      <div class="sidebar-note">
+        <strong>隐私提醒</strong>
+        <span>截图和提问前，请遮住 API Key、私人路径与未公开研究信息。</span>
+      </div>
     </aside>
+
     <main class="content">
+      {% unless page.url == '/' %}
+      <div class="eyebrow">{{ page.kicker | default: 'PaperPiggy 使用教程' }}</div>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}<p class="lead">{{ page.description }}</p>{% endif %}
+      {% if page.last_reviewed %}<p class="reviewed">最后核对：{{ page.last_reviewed }}</p>{% endif %}
+      {% endunless %}
       {{ content }}
-      <footer>
-        <a href="{{ '/' | relative_url }}">返回教程首页</a>
-        <span>·</span>
-        <a href="https://github.com/DrinkTea905/paper-piggy/issues">报告软件问题</a>
+      <footer class="page-footer">
+        <span>PaperPiggy · 论文小猪</span>
+        <a href="https://github.com/DrinkTea905/paper-piggy-guide/issues" target="_blank" rel="noopener">反馈教程问题</a>
       </footer>
     </main>
   </div>

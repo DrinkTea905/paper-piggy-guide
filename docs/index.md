@@ -6,7 +6,10 @@ last_reviewed: 2026-07-22
 ---
 
 <section class="hero">
-  <img class="hero-lockup" src="{{ '/assets/paperpiggy-brand.png' | relative_url }}" alt="PaperPiggy 从零开始">
+  <div class="hero-brand" aria-label="PaperPiggy 从零开始">
+    <img class="hero-icon" src="{{ '/assets/paperpiggy-icon.png' | relative_url }}" alt="">
+    <span><strong>PaperPiggy</strong><small>从零开始</small></span>
+  </div>
   <h1>建好库，接上 Agent，然后直接说你要研究什么。</h1>
   <p>PaperPiggy 不只是一个搜索框。它把 Zotero 文库变成 AI 可以检索、精读和长期维护的研究知识库。你只需完成一次基础设置，之后大部分检索、深索、综述和维护工作都可以交给 Agent。</p>
   <div class="hero-actions">
@@ -24,7 +27,7 @@ last_reviewed: 2026-07-22
 第一次使用时，按下面的顺序完成基础设置：
 
 <div class="journey">
-  <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，配置硅基流动 API</strong><span>主教程统一使用 API 模式，免下载本地检索模型，配置最简单。</span></a>
+  <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，配置硅基流动 API</strong><span>完成应用安装并配置硅基流动 API，准备开始建立自己的文献库。</span></a>
   <a href="{{ '/library/' | relative_url }}"><strong>连接 Zotero，建立第一版索引</strong><span>先让题录和语义检索可用，不必等待整库深索完成。</span></a>
   <a href="{{ '/agent/' | relative_url }}"><strong>把知识库连接给 Agent</strong><span>在应用的 Agent 页复制接入命令，粘贴到 Claude Code、Codex 等客户端。</span></a>
   <a href="{{ '/search/' | relative_url }}"><strong>直接用自然语言布置研究任务</strong><span>让 Agent 自己检索、挑选文献、深读原文并核对证据。</span></a>

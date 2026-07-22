@@ -31,7 +31,7 @@ last_reviewed: 2026-07-22
 - **本地模式**：检索文本不发给外部服务，首次要下载约 1.2 GB 模型；
 - **SiliconFlow 云端检索**：免下载、适合快速开始，检索时会联网并发送待检索文本。
 
-推荐新用户先选 SiliconFlow 云端检索。知识库检索同时需要“嵌入”和“重排”两个专用模型，普通 DeepSeek、Kimi、OpenAI 对话 API 不能直接替代；PaperPiggy 已经为 SiliconFlow 配好当前免费的两个检索模型。
+推荐新用户先选 SiliconFlow 云端检索。知识库检索同时需要“嵌入”和“重排”两项专用能力，普通 DeepSeek、Kimi、OpenAI 对话 API 不能直接用于知识库检索。SiliconFlow 云端检索当前免费。
 
 ## 第三步：申请并填写 SiliconFlow API Key
 
@@ -45,7 +45,7 @@ last_reviewed: 2026-07-22
 2. 点击“测试嵌入与重排”；
 3. 连接成功后进入“连接文库”。
 
-向导不再要求普通用户填写 Base URL 或模型名。其他同时提供嵌入和重排接口的服务，只在建库后的检索高级设置中配置。本地模式见[进阶设置]({{ '/advanced/' | relative_url }})。
+粘贴 Key 并完成测试后，即可连接文库。本地模式见[进阶设置]({{ '/advanced/' | relative_url }})。
 
 ## 第四步：连接 Zotero
 

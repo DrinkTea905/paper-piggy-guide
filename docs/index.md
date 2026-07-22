@@ -54,7 +54,7 @@ last_reviewed: 2026-07-22
 当基础主线已经跑通，再阅读：
 
 <div class="grid two">
-  <a class="card" href="{{ '/advanced/' | relative_url }}"><span class="number">进阶</span><strong>本地模式、文件夹模式与应用内对话</strong><span>这些都是有特定用途的替代方案，不是首次使用的必经步骤。</span></a>
+  <a class="card" href="{{ '/advanced/' | relative_url }}"><span class="number">进阶</span><strong>本地模式、文件夹模式与应用内对话</strong><span>用于离线检索、独立文件库和轻量问答等场景。</span></a>
   <a class="card" href="{{ '/backup-faq/' | relative_url }}"><span class="number">维护</span><strong>备份、更新与排错</strong><span>保护研究成果，区分知识库更新、索引重建和应用升级。</span></a>
 </div>
 

@@ -45,7 +45,7 @@ Agent 使用的模型和账户由对应客户端决定。PaperPiggy 里的硅基
 
 ## 从应用内复制真实接入命令
 
-<div class="steps">
+<div class="steps" markdown="1">
 
 ### 打开 Agent 页
 

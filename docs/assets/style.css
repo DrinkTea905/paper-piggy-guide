@@ -40,7 +40,7 @@ a:hover { color: var(--pink); }
 .brand { display: flex; align-items: center; gap: 11px; color: var(--ink); text-decoration: none; }
 .brand-icon {
   width: 48px; height: 48px; display: block; flex: 0 0 auto;
-  object-fit: cover; object-position: center top; border-radius: 14px;
+  object-fit: contain;
 }
 .brand-copy strong, .brand-copy small { display: block; line-height: 1.08; }
 .brand-copy strong { font-size: 20px; letter-spacing: -.02em; }
@@ -94,7 +94,7 @@ p { margin: 12px 0; }
 .hero-brand { display: flex; align-items: center; gap: 16px; }
 .hero-icon {
   width: 76px; height: 76px; display: block; flex: 0 0 auto;
-  object-fit: cover; object-position: center top; border-radius: 21px;
+  object-fit: contain;
 }
 .hero-brand strong, .hero-brand small { display: block; line-height: 1.08; }
 .hero-brand strong { font-size: 34px; letter-spacing: -.03em; }
@@ -182,7 +182,7 @@ blockquote { margin: 22px 0; padding: 1px 20px; border-left: 3px solid var(--lin
 @media (max-width: 680px) {
   .topbar { min-height: 62px; padding: 9px 16px; }
   .top-actions > a:first-child { display: none; }
-  .brand-icon { width: 42px; height: 42px; border-radius: 12px; }
+  .brand-icon { width: 42px; height: 42px; }
   .brand-copy strong { font-size: 18px; }
   .page-shell { width: min(100% - 28px, 760px); }
   .content { padding: 34px 0 56px; }
@@ -191,7 +191,7 @@ blockquote { margin: 22px 0; padding: 1px 20px; border-left: 3px solid var(--lin
   .hero { padding: 28px 22px; border-radius: 22px; }
   .hero h1 { font-size: 41px; }
   .hero p, .lead { font-size: 17px; }
-  .hero-icon { width: 64px; height: 64px; border-radius: 18px; }
+  .hero-icon { width: 64px; height: 64px; }
   .hero-brand strong { font-size: 29px; }
   .hero-brand small { font-size: 15px; }
   .grid, .grid.two, .flow { grid-template-columns: 1fr; }

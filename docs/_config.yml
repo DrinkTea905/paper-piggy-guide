@@ -1,0 +1,10 @@
+title: PaperPiggy 新手教程
+description: 从零开始，把 Zotero 或全文文件夹变成可检索、可引用、会积累的 AI 知识库
+lang: zh-CN
+url: https://drinktea905.github.io
+baseurl: /paper-piggy-guide
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
+  - AGENTS.md

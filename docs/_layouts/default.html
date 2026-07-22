@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title | default: site.title }} · PaperPiggy</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ '/' | relative_url }}">🐷 PaperPiggy 新手教程</a>
+    <div class="toplinks">
+      <a href="https://github.com/DrinkTea905/paper-piggy/releases/latest">下载最新版</a>
+      <a href="https://github.com/DrinkTea905/paper-piggy">程序仓库</a>
+    </div>
+  </header>
+  <div class="shell">
+    <aside class="side">
+      <nav>
+        <a href="{{ '/' | relative_url }}">教程首页</a>
+        <a href="{{ '/quick-start/' | relative_url }}">10 分钟快速开始</a>
+        <a href="{{ '/install/' | relative_url }}">安装与首次设置</a>
+        <a href="{{ '/library/' | relative_url }}">连接文献与建立索引</a>
+        <a href="{{ '/search/' | relative_url }}">深索与全文检索</a>
+        <a href="{{ '/chat-wiki/' | relative_url }}">对话与综述库</a>
+        <a href="{{ '/agent/' | relative_url }}">接入 AI Agent</a>
+        <a href="{{ '/backup-faq/' | relative_url }}">备份、更新与常见问题</a>
+      </nav>
+      <p class="side-note">教程按当前正式版界面核对。若按钮名称有变化，以应用内实际显示为准。</p>
+    </aside>
+    <main class="content">
+      {{ content }}
+      <footer>
+        <a href="{{ '/' | relative_url }}">返回教程首页</a>
+        <span>·</span>
+        <a href="https://github.com/DrinkTea905/paper-piggy/issues">报告软件问题</a>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

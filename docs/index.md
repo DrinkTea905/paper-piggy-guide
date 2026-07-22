@@ -27,7 +27,7 @@ last_reviewed: 2026-07-22
 第一次使用时，按下面的顺序完成基础设置：
 
 <div class="journey">
-  <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，配置硅基流动 API</strong><span>完成应用安装并配置硅基流动 API，准备开始建立自己的文献库。</span></a>
+  <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，选择检索方式</strong><span>分清检索引擎、检索摘要和对话模型，再配置 SiliconFlow 云端检索。</span></a>
   <a href="{{ '/library/' | relative_url }}"><strong>连接 Zotero，建立第一版索引</strong><span>先让题录和语义检索可用，不必等待整库深索完成。</span></a>
   <a href="{{ '/agent/' | relative_url }}"><strong>把知识库连接给 Agent</strong><span>在应用的 Agent 页复制接入命令，粘贴到 Claude Code、Codex 等客户端。</span></a>
   <a href="{{ '/search/' | relative_url }}"><strong>直接用自然语言布置研究任务</strong><span>让 Agent 自己检索、挑选文献、深读原文并核对证据。</span></a>
@@ -42,8 +42,8 @@ last_reviewed: 2026-07-22
 
 <div class="grid two">
   <a class="card" href="{{ '/quick-start/' | relative_url }}"><span class="number">01</span><strong>10 分钟快速开始</strong><span>安装、配置 API、连接 Zotero、建库并接上 Agent。</span></a>
-  <a class="card" href="{{ '/install/' | relative_url }}"><span class="number">02</span><strong>安装与配置 API</strong><span>申请硅基流动 Key，理解它与 Agent 模型的区别。</span></a>
-  <a class="card" href="{{ '/library/' | relative_url }}"><span class="number">03</span><strong>连接 Zotero 建库</strong><span>理解题录、语义、深索和检索摘要四个阶段。</span></a>
+  <a class="card" href="{{ '/install/' | relative_url }}"><span class="number">02</span><strong>安装与配置 API</strong><span>申请 SiliconFlow Key，分清检索、摘要与 Agent 模型。</span></a>
+  <a class="card" href="{{ '/library/' | relative_url }}"><span class="number">03</span><strong>连接 Zotero 建库</strong><span>理解题录、语义、深索和可选的检索摘要增强。</span></a>
   <a class="card" href="{{ '/agent/' | relative_url }}"><span class="number">04</span><strong>连接 Agent</strong><span>从应用里复制真实命令，完成第一次知识库调用。</span></a>
   <a class="card" href="{{ '/search/' | relative_url }}"><span class="number">05</span><strong>用 Agent 开始研究</strong><span>从找文献到读原文、核论断和生成研究成果。</span></a>
   <a class="card" href="{{ '/chat-wiki/' | relative_url }}"><span class="number">06</span><strong>让 Agent 维护知识库</strong><span>把一次性答案变成可积累、会更新的综述体系。</span></a>

@@ -130,7 +130,7 @@ PaperPiggy 会自动在本机 OCR 没有文字层的页面。OCR 比普通文本
 
 - PaperPiggy 版本；
 - Windows 版本；
-- 使用 API 模式还是本地模式；
+- 使用 SiliconFlow 云端检索还是本地检索；
 - 使用 Zotero 还是文件夹模式；
 - 发生问题前执行的步骤；
 - 完整报错文字；

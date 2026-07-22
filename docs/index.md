@@ -7,7 +7,7 @@ last_reviewed: 2026-07-22
 
 <section class="hero">
   <div class="hero-brand" aria-label="PaperPiggy 从零开始">
-    <img class="hero-icon" src="{{ '/assets/paperpiggy-icon.png' | relative_url }}" alt="">
+    <img class="hero-icon" src="{{ '/assets/paperpiggy-icon-square.png' | relative_url }}" alt="">
     <span><strong>PaperPiggy</strong><small>从零开始</small></span>
   </div>
   <h1>建好库，接上 Agent，剩下的让 Agent 代劳。</h1>

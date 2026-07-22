@@ -10,7 +10,7 @@ last_reviewed: 2026-07-22
     <img class="hero-icon" src="{{ '/assets/paperpiggy-icon-square.png' | relative_url }}" alt="">
     <span><strong>PaperPiggy</strong><small>从零开始</small></span>
   </div>
-  <h1>建好库，接上 Agent，剩下的让 Agent 代劳。</h1>
+  <h1><span class="hero-title-line">建好库，接上 Agent，</span><span class="hero-title-line">剩下的让 Agent 代劳。</span></h1>
   <p>PaperPiggy 不只是一个搜索框。它把 Zotero 文库变成 AI 可以检索、精读和长期维护的研究知识库。你只需完成一次基础设置，之后大部分检索、深索、综述和维护工作都可以交给 Agent。</p>
   <div class="hero-actions">
     <a class="button" href="{{ '/quick-start/' | relative_url }}">10 分钟完成基础设置</a>

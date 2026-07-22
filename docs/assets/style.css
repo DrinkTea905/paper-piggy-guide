@@ -100,7 +100,8 @@ p { margin: 12px 0; }
 .hero-brand strong { font-size: 34px; letter-spacing: -.03em; }
 .hero-brand small { margin-top: 7px; color: var(--muted); font-size: 17px; }
 .hero-badge { display: inline-flex; gap: 8px; margin-left: 12px; padding: 6px 11px; border-radius: 999px; color: var(--green); background: #eaf4ed; font-size: 12px; font-weight: 750; vertical-align: top; }
-.hero h1 { max-width: 680px; margin-top: 22px; font-size: clamp(42px, 7vw, 68px); }
+.hero h1 { max-width: 680px; margin-top: 22px; font-size: clamp(40px, 6vw, 60px); }
+.hero-title-line { display: block; white-space: nowrap; }
 .hero p { max-width: 680px; color: #5f584f; font-size: 19px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 .grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 16px; margin: 22px 0; }
@@ -189,7 +190,7 @@ blockquote { margin: 22px 0; padding: 1px 20px; border-left: 3px solid var(--lin
   h1 { font-size: 36px; }
   h2 { margin-top: 42px; font-size: 24px; }
   .hero { padding: 28px 22px; border-radius: 22px; }
-  .hero h1 { font-size: 41px; }
+  .hero h1 { font-size: clamp(26px, 8vw, 41px); }
   .hero p, .lead { font-size: 17px; }
   .hero-icon { width: 64px; height: 64px; }
   .hero-brand strong { font-size: 29px; }

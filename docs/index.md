@@ -6,8 +6,7 @@ last_reviewed: 2026-07-22
 ---
 
 <section class="hero">
-  <img class="hero-logo" src="{{ '/assets/paperpiggy.png' | relative_url }}" alt="PaperPiggy 应用图标">
-  <span class="hero-badge">PaperPiggy 新手教程</span>
+  <img class="hero-lockup" src="{{ '/assets/paperpiggy-brand.png' | relative_url }}" alt="PaperPiggy 从零开始">
   <h1>建好库，接上 Agent，然后直接说你要研究什么。</h1>
   <p>PaperPiggy 不只是一个搜索框。它把 Zotero 文库变成 AI 可以检索、精读和长期维护的研究知识库。你只需完成一次基础设置，之后大部分检索、深索、综述和维护工作都可以交给 Agent。</p>
   <div class="hero-actions">
@@ -22,7 +21,7 @@ last_reviewed: 2026-07-22
 
 ## 推荐学习顺序
 
-教程不再提供几条彼此分散的路线。第一次使用时，按下面这条主线走即可：
+第一次使用时，按下面的顺序完成基础设置：
 
 <div class="journey">
   <a href="{{ '/install/' | relative_url }}"><strong>安装 PaperPiggy，配置硅基流动 API</strong><span>主教程统一使用 API 模式，免下载本地检索模型，配置最简单。</span></a>
@@ -33,7 +32,7 @@ last_reviewed: 2026-07-22
 </div>
 
 <div class="callout agent">
-  <strong>Agent 不是最后才学的高级功能。</strong> 它是 PaperPiggy 的主要使用方式。完成首次建库后，就可以先接上 Agent；深索和检索摘要不必全部由你手工处理。
+  <strong>Agent 是 PaperPiggy 的核心使用方式。</strong>完成首次建库后，就可以先接上 Agent；深索和检索摘要不必全部由你手工处理。
 </div>
 
 ## 基础部分

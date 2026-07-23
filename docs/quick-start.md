@@ -3,7 +3,7 @@ layout: default
 title: 10 分钟快速开始
 kicker: 第 1 章 · 基础设置
 description: 用最短路径完成 SiliconFlow 云端检索、Zotero 建库和 Agent 接入。十分钟内不追求整库深索完毕。
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 ---
 
 <div class="callout tip">
@@ -28,7 +28,7 @@ last_reviewed: 2026-07-22
 
 首次向导的“选择检索方式”提供两项：
 
-- **本地模式**：检索文本不发给外部服务，首次要下载约 1.2 GB 模型；
+- **本地模式**：检索文本不发给外部服务，首次要下载约 900 MB，解压后约占 1.2 GB；
 - **SiliconFlow 云端检索**：免下载、适合快速开始，检索时会联网并发送待检索文本。
 
 推荐新用户先选 SiliconFlow 云端检索。知识库检索同时需要“嵌入”和“重排”两项专用能力，普通 DeepSeek、Kimi、OpenAI 对话 API 不能直接用于知识库检索。SiliconFlow 云端检索当前免费。

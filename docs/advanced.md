@@ -3,7 +3,7 @@ layout: default
 title: 进阶设置
 kicker: 第 7 章 · 进阶
 description: 了解本地模式、文件夹模式、应用内对话和手动检索；基础主线跑通后再按需要选择。
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-23
 ---
 
 <div class="callout">
@@ -16,7 +16,7 @@ last_reviewed: 2026-07-22
 
 选择本地模式后：
 
-- 首次需要下载约 1.2 GB 模型；
+- 首次需要下载约 900 MB，解压后约占 1.2 GB；
 - 建立语义索引和第一次检索通常更慢；
 - 检索时会占用更多内存；
 - 检索文本只在本机处理；
